@@ -1,0 +1,652 @@
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:#080606;color:#e9dfd2;font-family:Montserrat,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}#header{position:fixed;z-index:20;width:100%;height:80px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#080606e8,#08060622);border-bottom:1px solid #c397481f;transition:.3s}.brand{display:flex;align-items:center;gap:13px}.brand span{width:42px;height:42px;border:1px solid #a77b3b;border-radius:50%;display:grid;place-items:center;color:#d5b36e;font:14px Cinzel}.brand b{font:500 14px Cinzel;letter-spacing:2px;text-transform:uppercase}nav{display:flex;gap:27px;align-items:center}nav a{font-size:10px;letter-spacing:1.7px;text-transform:uppercase}.cta{padding:12px 20px;border:1px solid #ad8040;color:#dfbe7b}.menu{display:none}.hero{height:100vh;min-height:720px;position:relative;display:flex;align-items:center;padding:100px 8vw 50px}.hero-photo{position:absolute;inset:0 0 0 38%;background:url("assets/denise-resende.jpeg") center 30%/cover no-repeat}.shade{position:absolute;inset:0;background:linear-gradient(90deg,#080606 3%,#080606f2 35%,#08060645 70%,#08060680)}.hero-copy{position:relative;z-index:2;width:55%;max-width:690px}.eyebrow{color:#c69a53;font-size:10px;letter-spacing:4px;margin-bottom:22px}.hero h1,h2{font-family:"Cormorant Garamond",serif;font-weight:400}.hero h1{font-size:clamp(76px,9vw,145px);line-height:.72;letter-spacing:-3px;margin:20px 0 38px}.hero h1 em,h2 em{color:#c69a53;font-weight:400}.hero-copy>p:last-of-type{font:20px/1.7 "Cormorant Garamond";color:#b6a99d;max-width:560px}.actions{display:flex;gap:12px;margin-top:35px}.btn{display:inline-block;padding:15px 24px;font-size:10px;letter-spacing:2px;text-transform:uppercase}.gold{background:linear-gradient(135deg,#94642c,#d6b269,#9b6c31);color:#100a07;border:1px solid #dfbd76;font-weight:600}.outline{border:1px solid #c8a56855}.quote{min-height:330px;padding:70px 20px;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,#1d0d0c,#080606 65%);border-block:1px solid #c397481c}.quote i{color:#b98b44}.quote p{max-width:950px;font:clamp(31px,4vw,57px)/1.15 "Cormorant Garamond"}.quote em{color:#c69a53}.section{padding:130px 8vw}.about{display:grid;grid-template-columns:1.3fr .7fr;gap:9vw;background:linear-gradient(135deg,#090707,#130909)}h2{font-size:clamp(44px,5vw,76px);line-height:1.03}.copy>p:not(.eyebrow){font:19px/1.8 "Cormorant Garamond";color:#b4a69a;margin-top:24px}.copy blockquote{margin-top:35px;border-left:1px solid #a47a3d;padding-left:22px;color:#d3b36f;font:italic 23px "Cormorant Garamond"}.facts{align-self:end;border:1px solid #c3974833;padding:10px 30px}.facts div{padding:24px 0;border-bottom:1px solid #ffffff0d}.facts div:last-child{border:0}.facts small{display:block;color:#806f60;font-size:8px;letter-spacing:2px;margin-bottom:8px}.facts strong{font:20px "Cormorant Garamond"}.studies>h2{max-width:800px;margin-bottom:55px}.grid{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid #c3974833}.grid article{padding:40px 35px;min-height:270px;border-right:1px solid #c3974829}.grid article:last-child{border:0}.grid b{color:#9f763d;font:12px Cinzel}.grid h3{font:36px "Cormorant Garamond";margin:48px 0 15px}.grid p{color:#8f8277;font-size:12px;line-height:1.8}.book{display:grid;grid-template-columns:.9fr 1.1fr;gap:9vw;align-items:center;background:radial-gradient(circle at 23% 50%,#2a140f,#0b0707 37%,#110908)}.cover{text-align:center}.cover img{width:min(100%,430px);box-shadow:0 35px 70px #000;border:1px solid #c89b4b55;transform:perspective(1000px) rotateY(5deg)}.bookcopy h2{font:clamp(70px,8vw,122px)/.9 Cinzel;color:#d4ac61;letter-spacing:4px}.bookcopy h3{font:26px "Cormorant Garamond";margin-top:20px}.bookcopy hr{width:90px;border:0;border-top:1px solid #a77a3b;margin:30px 0}.bookcopy>p:not(.eyebrow):not(.tags){font:18px/1.8 "Cormorant Garamond";color:#aa9c90}.tags{color:#bc914e;font-size:9px;letter-spacing:3px;margin:25px 0}.manifesto{min-height:620px;display:grid;place-items:center;text-align:center;padding:100px 25px;background:radial-gradient(circle,#25100e,#080606 64%)}.manifesto>div{max-width:1000px}.manifesto h2{font-size:clamp(42px,5.5vw,79px)}.manifesto div>p:last-child{max-width:650px;margin:32px auto;color:#9d9084;font:18px/1.8 "Cormorant Garamond"}.contact p:last-child{color:#9e9185;font:18px/1.8 "Cormorant Garamond";margin-top:25px}footer{padding:42px 6vw;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #c3974822;color:#766a60;font-size:9px}.reveal{opacity:0;transform:translateY(25px);transition:.8s}.reveal.visible{opacity:1;transform:none}@media(max-width:900px){#header{height:70px;padding:0 20px}.menu{display:block;background:none;border:0;color:#d5b36e;font-size:24px}nav{position:fixed;inset:70px 0 0;background:#080606f8;flex-direction:column;justify-content:center;transform:translateX(100%);transition:.3s}nav.open{transform:none}nav a{font:22px "Cormorant Garamond"}.hero{align-items:flex-end;padding:100px 22px 60px;min-height:820px}.hero-photo{inset:0;background-position:55% center}.shade{background:linear-gradient(0deg,#080606 8%,#080606e8 34%,#0806061a 75%,#08060688)}.hero-copy{width:100%}.hero h1{font-size:clamp(68px,20vw,100px)}.about,.book{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.grid article{border-right:0;border-bottom:1px solid #c3974829}.section{padding:90px 22px}footer{flex-direction:column;gap:24px;text-align:center}}
+/* ===== CONTATO / REDES SOCIAIS ===== */
+.social-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.social-btn{min-width:230px;display:flex;align-items:center;gap:14px;padding:15px 20px;border:1px solid #c3974845;background:#ffffff05;transition:.3s}
+.social-btn:hover{transform:translateY(-3px);border-color:#c69a53;background:#c397480d}
+.social-icon{width:38px;height:38px;border:1px solid #b88945;border-radius:50%;display:grid;place-items:center;color:#d8b878;font-size:20px}
+.social-btn small{display:block;color:#8d7c6c;font-size:7px;letter-spacing:2px;margin-bottom:4px}
+.social-btn strong{font:500 20px "Cormorant Garamond";color:#e6d7c6}
+.whatsapp-float{position:fixed;right:25px;bottom:25px;z-index:40;display:flex;align-items:center;gap:9px;padding:13px 17px;border:1px solid #b88945;background:#0d0908eF;box-shadow:0 12px 35px #0008;color:#e2c27d;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;transition:.3s;backdrop-filter:blur(10px)}
+.whatsapp-float:hover{transform:translateY(-3px);background:#17100d}
+@media(max-width:520px){.social-btn{width:100%}.whatsapp-float{right:16px;bottom:16px}.whatsapp-float span{display:none}}
+
+/* ===== CAPA LILITH — AJUSTE PREMIUM ===== */
+.book{grid-template-columns:.78fr 1.22fr;gap:8vw}
+.cover{display:flex;justify-content:center;align-items:center}
+.cover img{
+  width:min(78%,350px) !important;
+  height:auto;
+  object-fit:contain;
+  background:transparent;
+  border:1px solid rgba(202,157,79,.28) !important;
+  box-shadow:0 28px 70px rgba(0,0,0,.78),0 0 42px rgba(171,112,44,.10) !important;
+  transform:perspective(1100px) rotateY(4deg) !important;
+  transition:transform .45s ease,box-shadow .45s ease;
+}
+.cover img:hover{
+  transform:perspective(1100px) rotateY(0deg) translateY(-5px) !important;
+  box-shadow:0 34px 80px rgba(0,0,0,.85),0 0 55px rgba(171,112,44,.15) !important;
+}
+@media(max-width:900px){
+  .book{grid-template-columns:1fr;gap:65px}
+  .cover img{width:min(76%,330px) !important}
+}
+
+/* ===== CURSOS ===== */
+.course{min-height:620px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:8vw;background:radial-gradient(circle at 78% 50%,rgba(120,61,26,.18),transparent 30%),linear-gradient(135deg,#080606,#120908);border-block:1px solid rgba(195,151,72,.14)}
+.course-intro{max-width:720px}.course-intro h2{font-size:clamp(55px,6vw,92px)}.course-subtitle{font:21px/1.7 "Cormorant Garamond";color:#aa9c90;margin:25px 0 34px}.course-open{border:0;cursor:pointer}
+.course-symbol{display:grid;place-items:center}.sigil-ring{width:min(32vw,340px);aspect-ratio:1;border:1px solid rgba(199,151,73,.32);border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 80px rgba(153,83,31,.12),inset 0 0 50px rgba(195,151,72,.04)}
+.sigil-ring:before,.sigil-ring:after{content:"";position:absolute;border:1px solid rgba(199,151,73,.18);border-radius:50%}.sigil-ring:before{inset:28px}.sigil-ring:after{inset:58px}.sigil-ring span{font:500 45px Cinzel;color:#c69a53;letter-spacing:5px}
+.course-modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:22px;opacity:0;visibility:hidden;transition:.35s}.course-modal.open{opacity:1;visibility:visible}.course-modal-backdrop{position:absolute;inset:0;background:rgba(3,2,2,.88);backdrop-filter:blur(12px)}
+.course-modal-panel{position:relative;width:min(900px,96vw);max-height:88vh;overflow:auto;padding:clamp(38px,6vw,72px);background:radial-gradient(circle at top right,rgba(114,54,28,.22),transparent 35%),#0d0807;border:1px solid rgba(203,157,79,.35);box-shadow:0 40px 100px #000}
+.course-modal-panel h2{font-size:clamp(42px,5vw,68px);line-height:1}.course-line{width:90px;height:1px;background:#a77a3b;margin:28px 0}.course-text p{font:19px/1.72 "Cormorant Garamond";color:#c0b2a4;margin-top:18px}.course-text .course-signature{color:#d5b36e;font-style:italic;font-size:23px;margin-top:30px}.course-close{position:absolute;right:24px;top:18px;border:0;background:none;color:#d6b56f;font:300 34px/1 Montserrat;cursor:pointer}.course-close:hover{color:#fff}
+body.modal-open{overflow:hidden}
+@media(max-width:900px){.course{grid-template-columns:1fr;min-height:auto}.course-symbol{display:none}.course-modal-panel{padding:50px 25px 35px}.course-text p{font-size:18px}}
+
+/* ===== CURSOS — DIREÇÃO VISUAL PREMIUM V2 ===== */
+.course{
+  min-height:540px !important;
+  padding-top:90px !important;
+  padding-bottom:90px !important;
+  grid-template-columns:1.08fr .92fr !important;
+  gap:6vw !important;
+  overflow:hidden;
+}
+.course-intro{position:relative;z-index:2}
+.course-intro h2{letter-spacing:-1.5px}
+.course-intro .course-subtitle{max-width:520px}
+.course-symbol{position:relative;min-height:400px !important}
+.ritual-art{
+  position:relative;
+  width:min(37vw,430px);
+  aspect-ratio:1;
+  display:grid;
+  place-items:center;
+  isolation:isolate;
+}
+.ritual-art:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border:1px solid rgba(194,145,67,.18);
+  transform:rotate(45deg) scale(.70);
+}
+.ritual-art:after{
+  content:"";
+  position:absolute;
+  inset:8%;
+  border:1px solid rgba(194,145,67,.09);
+  border-radius:50%;
+  box-shadow:inset 0 0 70px rgba(154,79,31,.07);
+}
+.ritual-glow{
+  position:absolute;
+  width:70%;height:70%;border-radius:50%;
+  background:radial-gradient(circle,rgba(178,103,43,.18) 0,rgba(128,62,28,.07) 35%,transparent 70%);
+  filter:blur(18px);
+}
+.ritual-orbit{position:absolute;border-radius:50%;border:1px solid rgba(199,151,73,.30)}
+.orbit-one{inset:15%}
+.orbit-two{inset:23%;border-color:rgba(199,151,73,.22)}
+.orbit-three{inset:31%;border-color:rgba(199,151,73,.16)}
+.ritual-diamond{
+  position:absolute;
+  width:53%;height:53%;
+  border:1px solid rgba(199,151,73,.16);
+  transform:rotate(45deg);
+}
+.ritual-axis{position:absolute;background:linear-gradient(90deg,transparent,rgba(199,151,73,.18),transparent)}
+.axis-h{width:78%;height:1px}
+.axis-v{height:78%;width:1px;background:linear-gradient(0deg,transparent,rgba(199,151,73,.18),transparent)}
+.ritual-core{
+  position:relative;z-index:3;
+  width:37%;aspect-ratio:1;border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border:1px solid rgba(209,163,85,.34);
+  background:radial-gradient(circle,#21100c 0,#0b0706 70%);
+  box-shadow:0 0 45px rgba(153,78,28,.13);
+}
+.ritual-core strong{font:500 clamp(32px,3.4vw,48px) Cinzel;color:#d2a45a;letter-spacing:5px;margin:7px 0}
+.ritual-core small{font-size:6px;letter-spacing:2.5px;color:#8f7047}
+.ritual-star{position:absolute;color:#bd8c45;font-size:14px;text-shadow:0 0 14px rgba(211,164,88,.35)}
+.star-a{top:9%;left:49%}.star-b{right:9%;top:49%}.star-c{bottom:9%;left:49%}
+.ritual-caption{position:absolute;bottom:-4px;color:#816644;font-size:6px;letter-spacing:2.2px;white-space:nowrap}
+.ritual-art{animation:ritualFloat 6s ease-in-out infinite}
+.orbit-one{animation:ritualSpin 35s linear infinite}
+.ritual-diamond{animation:ritualSpinDiamond 45s linear infinite}
+@keyframes ritualFloat{50%{transform:translateY(-7px)}}
+@keyframes ritualSpin{to{transform:rotate(360deg)}}
+@keyframes ritualSpinDiamond{from{transform:rotate(45deg)}to{transform:rotate(405deg)}}
+@media(max-width:900px){
+ .course{padding-top:80px!important;padding-bottom:80px!important}
+ .course-symbol{display:grid!important;min-height:340px!important;margin-top:10px}
+ .ritual-art{width:min(82vw,360px)}
+}
+
+/* ===== LEGIBILIDADE + CTA DO CURSO ===== */
+body{font-size:16px}
+nav a{font-size:12px !important}
+.eyebrow{font-size:12px !important;letter-spacing:3.5px}
+.btn{font-size:11px !important}
+.facts small{font-size:10px !important}
+.grid b{font-size:13px !important}
+.grid p{font-size:14px !important;line-height:1.75}
+.tags{font-size:11px !important}
+footer{font-size:11px !important}
+.social-btn small{font-size:9px !important}
+.whatsapp-float{font-size:11px !important}
+.ritual-core small{font-size:8px !important}
+.ritual-caption{font-size:8px !important;letter-spacing:1.8px}
+.course-text p{font-size:20px !important}
+.course-whatsapp{margin-top:30px;cursor:pointer;min-width:290px;text-align:center}
+@media(max-width:520px){
+ nav a{font-size:23px !important}
+ .eyebrow{font-size:11px !important}
+ .ritual-caption{font-size:7px !important}
+ .course-whatsapp{width:100%;min-width:0}
+}
+
+/* ===== REFINAMENTO FINAL: HERO, TRAJETÓRIA, CURSO E CONVERSÃO ===== */
+.hero-positioning{position:relative;display:inline-block;margin:0 0 4px;color:#e3d1b8;font:500 14px Cinzel;letter-spacing:3px;text-transform:uppercase}
+.hero-positioning:after{content:"";display:block;width:68px;height:1px;background:#a77a3b;margin-top:13px}
+.trajectory{background:linear-gradient(135deg,#0a0707,#100807)}
+.trajectory>h2{max-width:780px;margin-bottom:60px}
+.timeline{max-width:1050px;border-top:1px solid rgba(195,151,72,.25)}
+.timeline-item{display:grid;grid-template-columns:80px 1fr;gap:25px;padding:30px 0;border-bottom:1px solid rgba(195,151,72,.18)}
+.timeline-item>span{color:#a87c3f;font:13px Cinzel;padding-top:5px}
+.timeline-item h3{font:400 28px "Cormorant Garamond";color:#e2d5c7;margin-bottom:8px}
+.timeline-item p{color:#9d9084;font:17px/1.7 "Cormorant Garamond";max-width:760px}
+.course-audience{background:#090606}
+.course-audience>div:first-child{max-width:850px}
+.audience-lead{font:19px/1.75 "Cormorant Garamond";color:#a99b8f;margin:25px 0 48px;max-width:720px}
+.audience-grid{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid rgba(195,151,72,.23)}
+.audience-grid article{padding:32px 25px;border-right:1px solid rgba(195,151,72,.17)}
+.audience-grid article:last-child{border-right:0}
+.audience-grid span{font:12px Cinzel;color:#a87c3f}
+.audience-grid h3{font:25px "Cormorant Garamond";margin:30px 0 12px;color:#e2d5c7}
+.audience-grid p{font:15px/1.7 "Cormorant Garamond";color:#95887c}
+.book-benefits{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}
+.book-benefits span{padding:9px 12px;border:1px solid rgba(195,151,72,.22);font-size:10px;letter-spacing:1px;color:#b9a895}
+.book-offer{display:flex;align-items:center;gap:25px;margin-top:25px}
+.book-offer small{display:block;font-size:9px;letter-spacing:2px;color:#887765;margin-bottom:4px}
+.book-offer strong{font:500 30px "Cormorant Garamond";color:#e2c178}
+.pending-checkout{opacity:.72;cursor:not-allowed}
+.checkout-note{font-size:10px!important;line-height:1.5!important;color:#786b61!important;margin-top:12px!important}
+@media(max-width:900px){.audience-grid{grid-template-columns:1fr 1fr}.audience-grid article:nth-child(2){border-right:0}.book-offer{align-items:flex-start;flex-direction:column}.timeline-item{grid-template-columns:45px 1fr}}
+@media(max-width:520px){.audience-grid{grid-template-columns:1fr}.audience-grid article{border-right:0;border-bottom:1px solid rgba(195,151,72,.17)}.hero-positioning{font-size:11px;letter-spacing:2px}}
+/* ===== E-BOOK LILITH — EFEITO 3D PREMIUM ===== */
+
+.book-cover{
+  perspective: 1400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-cover img{
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+
+  transform:
+    perspective(1400px)
+    rotateY(-10deg)
+    rotateX(2deg);
+
+  transform-origin: center;
+  border-radius: 3px;
+
+  box-shadow:
+    12px 8px 0 rgba(71,45,18,.95),
+    18px 12px 0 rgba(25,15,7,.95),
+    28px 25px 45px rgba(0,0,0,.75),
+    0 0 35px rgba(195,151,72,.15);
+
+  transition:
+    transform .55s ease,
+    box-shadow .55s ease;
+}
+
+.book-cover img:hover{
+  transform:
+    perspective(1400px)
+    rotateY(-3deg)
+    rotateX(0deg)
+    translateY(-8px)
+    scale(1.025);
+
+  box-shadow:
+    7px 5px 0 rgba(71,45,18,.95),
+    12px 9px 0 rgba(25,15,7,.95),
+    25px 35px 55px rgba(0,0,0,.8),
+    0 0 45px rgba(195,151,72,.25);
+}
+
+/* brilho/sombra sob o livro */
+.book-cover::after{
+  content:"";
+  position:absolute;
+  width:70%;
+  height:25px;
+  bottom:-16px;
+  left:15%;
+  background:rgba(0,0,0,.55);
+  filter:blur(15px);
+  border-radius:50%;
+  z-index:-1;
+}
+
+/* celular */
+@media(max-width:700px){
+  .book-cover img{
+    max-width:290px;
+    transform:
+      perspective(1200px)
+      rotateY(-7deg)
+      rotateX(1deg);
+  }
+}/* ===== COMPRAR AGORA — BOTÃO PREMIUM FLUTUANTE ===== */
+
+.pending-checkout{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+
+  padding:17px 34px !important;
+  min-width:190px;
+
+  background:linear-gradient(
+    135deg,
+    #d5ad62 0%,
+    #a9782d 50%,
+    #d5ad62 100%
+  ) !important;
+
+  color:#090706 !important;
+  border:1px solid #e2c17b !important;
+
+  font-family:"Cinzel", serif;
+  font-size:12px !important;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+
+  cursor:pointer !important;
+  position:relative;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.55),
+    0 0 20px rgba(195,151,72,.25);
+
+  animation:lilithBuyFloat 2.8s ease-in-out infinite;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    filter .3s ease;
+}
+
+.pending-checkout:hover{
+  transform:translateY(-5px) scale(1.05);
+
+  box-shadow:
+    0 16px 35px rgba(0,0,0,.7),
+    0 0 32px rgba(213,173,98,.45);
+
+  filter:brightness(1.12);
+}
+
+@keyframes lilithBuyFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-7px);
+  }
+}/* =====================================================
+   LILITH — MOCKUP 3D PREMIUM MAIS PROFUNDO
+   ===================================================== */
+
+.book-cover{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1800px;
+  padding: 25px 35px 45px 20px;
+  overflow: visible;
+}
+
+/* CAPA PRINCIPAL */
+.book-cover img{
+  position: relative;
+  z-index: 3;
+
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+
+  transform-origin: left center;
+
+  transform:
+    perspective(1800px)
+    rotateY(-20deg)
+    rotateX(2deg)
+    translateZ(25px);
+
+  border-radius: 2px;
+
+  box-shadow:
+    4px 0 0 #8f6a2c,
+    8px 0 0 #4b3417,
+    13px 0 0 #1d140b,
+    22px 8px 25px rgba(0,0,0,.65),
+    38px 28px 55px rgba(0,0,0,.72),
+    0 0 35px rgba(195,151,72,.18);
+
+  transition:
+    transform .65s cubic-bezier(.2,.8,.2,1),
+    box-shadow .65s ease,
+    filter .65s ease;
+
+  filter:
+    contrast(1.05)
+    saturate(1.08);
+}
+
+/* PROFUNDIDADE / LOMBADA SIMULADA */
+.book-cover::before{
+  content:"";
+  position:absolute;
+
+  z-index:2;
+
+  left:7%;
+  top:8%;
+
+  width:28px;
+  height:82%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #090705 0%,
+      #211509 25%,
+      #9d7330 48%,
+      #35230e 65%,
+      #080605 100%
+    );
+
+  transform:
+    perspective(1200px)
+    rotateY(48deg);
+
+  transform-origin:right center;
+
+  box-shadow:
+    -8px 8px 18px rgba(0,0,0,.7);
+
+  border-left:1px solid rgba(213,173,98,.4);
+}
+
+/* SOMBRA REALISTA EMBAIXO DO LIVRO */
+.book-cover::after{
+  content:"";
+  position:absolute;
+
+  z-index:1;
+
+  left:15%;
+  bottom:5px;
+
+  width:72%;
+  height:32px;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(0,0,0,.82) 0%,
+      rgba(0,0,0,.55) 40%,
+      transparent 75%
+    );
+
+  filter:blur(8px);
+
+  transform:
+    rotate(-2deg)
+    translateX(20px);
+}
+
+/* MOVIMENTO AO PASSAR O MOUSE */
+.book-cover:hover img{
+  transform:
+    perspective(1800px)
+    rotateY(-8deg)
+    rotateX(0deg)
+    translateY(-10px)
+    translateZ(40px)
+    scale(1.035);
+
+  box-shadow:
+    3px 0 0 #b88a3e,
+    7px 0 0 #60451e,
+    11px 0 0 #21170c,
+    25px 15px 35px rgba(0,0,0,.7),
+    45px 40px 70px rgba(0,0,0,.8),
+    0 0 50px rgba(213,173,98,.3);
+
+  filter:
+    contrast(1.08)
+    saturate(1.12)
+    brightness(1.04);
+}
+
+/* LEVE MOVIMENTO CONTÍNUO */
+@keyframes lilithBookFloat{
+  0%,100%{
+    translate:0 0;
+  }
+
+  50%{
+    translate:0 -6px;
+  }
+}
+
+.book-cover img{
+  animation:lilithBookFloat 4s ease-in-out infinite;
+}
+
+/* RESPONSIVO */
+@media(max-width:700px){
+
+  .book-cover{
+    padding:20px 25px 35px 10px;
+  }
+
+  .book-cover img{
+    max-width:290px;
+
+    transform:
+      perspective(1500px)
+      rotateY(-15deg)
+      rotateX(1deg)
+      translateZ(15px);
+  }
+
+  .book-cover:hover img{
+    transform:
+      perspective(1500px)
+      rotateY(-6deg)
+      translateY(-6px)
+      scale(1.02);
+  }
+}/* =====================================================
+   LILITH — LIVRO 3D REAL
+   CAPA + LOMBADA + ESPESSURA
+   ===================================================== */
+
+.book-cover{
+  position: relative;
+  width: 360px;
+  max-width: 90%;
+  margin: 30px auto 55px;
+
+  perspective: 1800px;
+  overflow: visible;
+
+  transform-style: preserve-3d;
+}
+
+/* CAPA */
+.book-cover img{
+  display: block;
+  width: 100%;
+  height: auto;
+
+  position: relative;
+  z-index: 5;
+
+  animation: none !important;
+
+  transform-origin: left center;
+
+  transform:
+    rotateY(-28deg)
+    rotateX(2deg)
+    translateZ(18px);
+
+  border-radius: 2px 5px 5px 2px;
+
+  box-shadow:
+    5px 3px 0 #b48a45,
+    10px 6px 0 #e3d4b5,
+    15px 9px 0 #c8b792,
+    20px 12px 0 #8e7b5c,
+    35px 28px 45px rgba(0,0,0,.72);
+
+  transition:
+    transform .6s ease,
+    box-shadow .6s ease;
+}
+
+/* LOMBADA DO LIVRO */
+.book-cover::before{
+  content:"LILITH";
+
+  position:absolute;
+
+  left:-27px;
+  top:4%;
+
+  width:38px;
+  height:92%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+
+  font-family:"Cinzel",serif;
+  font-size:18px;
+  letter-spacing:5px;
+
+  color:#d8b468;
+
+  background:
+    linear-gradient(
+      90deg,
+      #050403 0%,
+      #191006 20%,
+      #33200c 50%,
+      #110b05 80%,
+      #030201 100%
+    );
+
+  border-left:1px solid #8e692c;
+  border-right:1px solid #3d2a11;
+
+  box-shadow:
+    -8px 10px 20px rgba(0,0,0,.75);
+
+  z-index:3;
+}
+
+/* BLOCO DE PÁGINAS */
+.book-cover::after{
+  content:"";
+
+  position:absolute;
+
+  z-index:2;
+
+  right:-19px;
+  top:3%;
+
+  width:27px;
+  height:94%;
+
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #efe4cd 0px,
+      #efe4cd 2px,
+      #bcae92 3px,
+      #e5d8bd 4px
+    );
+
+  transform:
+    skewY(-5deg);
+
+  border-right:1px solid #8e7955;
+
+  box-shadow:
+    14px 18px 30px rgba(0,0,0,.6);
+}
+
+/* HOVER — MOSTRA AINDA MAIS O VOLUME */
+.book-cover:hover img{
+  transform:
+    rotateY(-18deg)
+    rotateX(1deg)
+    translateZ(28px)
+    translateY(-4px);
+
+  box-shadow:
+    6px 3px 0 #b48a45,
+    12px 6px 0 #eee2ca,
+    18px 9px 0 #d2c2a2,
+    24px 12px 0 #8e7b5c,
+    42px 32px 55px rgba(0,0,0,.78);
+}
+
+/* CELULAR */
+@media(max-width:700px){
+
+  .book-cover{
+    width:270px;
+  }
+
+  .book-cover::before{
+    left:-21px;
+    width:30px;
+    font-size:14px;
+  }
+
+  .book-cover::after{
+    right:-14px;
+    width:20px;
+  }
+
+  .book-cover img{
+    transform:
+      rotateY(-23deg)
+      rotateX(1deg)
+      translateZ(14px);
+  }
+}
